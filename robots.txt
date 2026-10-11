@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gustavomstelzer.github.io/sitemap.xml
