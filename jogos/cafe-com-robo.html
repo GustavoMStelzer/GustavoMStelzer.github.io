@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR" data-accent="red">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0d0d11">
+    <title>Café com robô — Gustavo Stelzer</title>
+    <meta name="description" content="Um jogo da velha com um robô convencido. Encontre uma brecha no modo Desafio ou tente empatar com o Imbatível. Sem cadastro: é só jogar.">
+    <meta property="og:title" content="Café com robô — Gustavo Stelzer">
+    <meta property="og:description" content="Um jogo da velha com um robô convencido. Encontre uma brecha no modo Desafio ou tente empatar com o Imbatível. Sem cadastro: é só jogar.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gustavomstelzer.github.io/assets/img/portfolio-social.png">
+    <meta property="og:url" content="https://gustavomstelzer.github.io/jogos/cafe-com-robo.html">
+    <link rel="canonical" href="https://gustavomstelzer.github.io/jogos/cafe-com-robo.html">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/portfolio.css?v=6">
+    <link rel="stylesheet" href="../assets/css/arcade.css?v=6">
+    <script src="../assets/js/config.js" defer></script>
+    <script src="../assets/js/theme.js?v=6" defer></script>
+    <script src="../assets/js/portfolio.js?v=6" defer></script>
+    <script src="../assets/js/games/tic-tac-toe.js?v=6" defer></script>
+    <script src="../assets/js/games/tic-tac-toe-ui.js?v=6" defer></script>
+  </head>
+  <body class="arcade-page tic-page">
+    <a class="skip-link" href="#conteudo">Pular para o jogo</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Gustavo Stelzer, início">
+          <span class="brand-monogram" aria-hidden="true">gs<span>.</span>
+          </span>
+          <span class="brand-name">Gustavo Stelzer<small>Desenvolvedor Full Stack</small>
+          </span>
+        </a>
+        <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+          <a href="../index.html#projetos">Projetos</a>
+          <a href="../index.html#sobre">Sobre</a>
+          <a href="../index.html#jogos">Jogos</a>
+          <a href="../index.html#alem-do-codigo">Além do código</a>
+          <a href="../index.html#contato">Contato</a>
+        </nav>
+        <div class="header-controls">
+          <details class="appearance" data-appearance="" hidden="">
+            <summary aria-label="Personalizar aparência">
+              <span class="appearance-icon" aria-hidden="true">◐</span>
+              <span>Estilo</span>
+            </summary>
+            <div class="appearance-panel" role="group" aria-label="Preferências de aparência">
+              <p class="control-label">Cor de destaque</p>
+              <div class="accent-options">
+                <button type="button" data-set-accent="red" aria-pressed="true">
+                  <i class="swatch swatch-red" aria-hidden="true"></i>Vermelho</button>
+                <button type="button" data-set-accent="violet" aria-pressed="false">
+                  <i class="swatch swatch-violet" aria-hidden="true"></i>Roxo</button>
+                <button type="button" data-set-accent="ice" aria-pressed="false">
+                  <i class="swatch swatch-ice" aria-hidden="true"></i>Gelo</button>
+              </div>
+              <label class="motion-control">
+                <input type="checkbox" data-reduce-motion> Reduzir movimentos</label>
+              <p class="appearance-note" data-appearance-note role="status">Suas preferências ficam neste navegador.</p>
+            </div>
+          </details>
+          <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false">Menu <span aria-hidden="true">+</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="conteudo" class="arcade-main container">
+      <a class="text-link" href="../index.html#jogos">← Voltar ao intervalo</a>
+      <header class="arcade-intro">
+        <div>
+          <p class="eyebrow">ENTRE UM CÓDIGO E OUTRO / 01</p>
+          <h1>Café com robô<span class="title-dot">.</span>
+          </h1>
+          <p>Ele tem um algoritmo. Você tem café. Vamos ver quem resolve melhor.</p>
+        </div>
+        <img class="arcade-doodle" src="../assets/img/coffee.svg" alt="Café sorridente" width="110" height="110">
+      </header>
+      <section class="game-shell" data-tic-tac-toe hidden aria-label="Jogo da velha">
+        <div class="game-stage">
+          <div class="stage-topline">
+            <span>CAFÉ × ROBÔ</span>
+            <b>TRÊS EM LINHA</b>
+          </div>
+          <div class="tic-board" data-board role="group" aria-label="Tabuleiro de três linhas e três colunas"></div>
+          <dl class="scoreboard" aria-label="Placar do modo selecionado">
+            <div>
+              <dt>Você · X</dt>
+              <dd data-score="X">0</dd>
+            </div>
+            <div>
+              <dt>Empates</dt>
+              <dd data-score="draw">0</dd>
+            </div>
+            <div>
+              <dt>Robô · O</dt>
+              <dd data-score="O">0</dd>
+            </div>
+          </dl>
+          <p class="score-note">Placar desta sessão, separado por dificuldade.</p>
+        </div>
+        <div class="game-sidebar">
+          <div class="mascot-line">
+            <img src="../assets/img/robot.svg" alt="Robô com expressão convencida" width="80" height="80">
+            <div>
+              <strong>Bit, o modestíssimo.</strong>
+              <small>“Eu ia deixar você ganhar. Ia.”</small>
+            </div>
+          </div>
+          <div class="game-message" role="status" aria-live="polite" aria-atomic="true">
+            <h2 data-status>Sua vez, humano.</h2>
+            <p data-caption>Escolha uma casa vazia.</p>
+          </div>
+          <div class="game-options">
+            <label>Dificuldade<select data-difficulty>
+                <option value="challenge">Desafio</option>
+                <option value="perfect">Imbatível</option>
+              </select>
+            </label>
+            <label>Quem começa?<select data-starter>
+                <option value="human">Você, com café</option>
+                <option value="robot">O robô</option>
+              </select>
+            </label>
+          </div>
+          <p class="mode-note" data-mode-note></p>
+          <div class="game-actions">
+            <button class="game-button" type="button" data-restart>
+              <span aria-hidden="true">↻</span> Outra rodada</button>
+            <button class="game-button secondary" type="button" data-reset-score>Zerar placar</button>
+          </div>
+        </div>
+      </section>
+      <div class="game-help">
+        <div>
+          <h2>Como ganhar</h2>
+          <p>Você é o café (X). Coloque três cafés em uma linha, coluna ou diagonal antes do robô (O). No Imbatível, seu desafio é sair com um empate.</p>
+        </div>
+        <div>
+          <h2>Sem manual de 80 páginas</h2>
+          <p>Toque ou clique para jogar. No teclado, use Tab ou as setas para escolher uma casa e Enter ou Espaço para marcar. Trocar as opções inicia outra rodada.</p>
+        </div>
+      </div>
+      <details class="game-technical">
+        <summary>Curioso sobre o código?</summary>
+        <p>A decisão do robô usa minimax: ele avalia os próximos estados do tabuleiro até vitória, derrota ou empate. O modo Imbatível escolhe sempre a melhor jogada. O Desafio mantém vitórias e bloqueios imediatos, mas permite escolhas aleatórias em outras posições. A lógica do jogo fica separada da interface e pode ser testada sem navegador.</p>
+        <a href="https://github.com/GustavoMStelzer/GustavoMStelzer.github.io/blob/main/assets/js/games/tic-tac-toe.js" target="_blank" rel="noopener noreferrer">Ver a lógica no GitHub ↗</a>
+      </details>
+      <nav class="other-game" aria-label="Outros caminhos">
+        <a href="../index.html#projetos">← De volta aos projetos</a>
+        <a href="plantao-do-apagao.html">Encarar o Plantão do apagão →</a>
+      </nav>
+      <noscript>
+        <p class="no-game">Os jogos precisam de JavaScript. Ative-o para jogar ou <a class="text-link" href="../index.html#projetos">conheça os projetos do portfólio</a>.</p>
+      </noscript>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year>2026</span> Gustavo Monteiro Stelzer</p>
+        <a href="../index.html#projetos">Voltar aos projetos ↗</a>
+        <a href="../index.html#contato">Falar comigo ↗</a>
+      </div>
+    </footer>
+  </body>
+</html>

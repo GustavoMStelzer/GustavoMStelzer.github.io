@@ -11,14 +11,21 @@
     </style>
     <title>Gustavo Stelzer — Desenvolvedor Full Stack</title>
     <meta name="description" content="Sou Gustavo Monteiro Stelzer, desenvolvedor Full Stack. Conheça meu trabalho com C#, .NET, Angular e Oracle, o Oracle Helper e o Ponto Crítico.">
-    <meta property="og:title" content="Gustavo Stelzer — Código e curiosidade">
-    <meta property="og:description" content="Desenvolvimento Full Stack, Oracle Helper e um pouco do que me move além do código.">
+    <meta property="og:title" content="Gustavo Stelzer — Desenvolvedor Full Stack">
+    <meta property="og:description" content="Projetos com C#, .NET, Angular e Oracle: integrações, sistemas corporativos, Oracle Helper e dois jogos para conhecer meu trabalho de outro jeito.">
+    <meta property="og:image" content="https://gustavomstelzer.github.io/assets/img/portfolio-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Gustavo Stelzer, desenvolvedor Full Stack. C#, .NET, Angular e Oracle.">
+    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="https://gustavomstelzer.github.io/">
     <link rel="canonical" href="https://gustavomstelzer.github.io/">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css?v=6">
+    <link rel="stylesheet" href="assets/css/arcade.css?v=6">
+    <link rel="stylesheet" href="assets/css/cases.css?v=6">
     <script src="assets/js/config.js" defer></script>
     <script src="assets/js/theme.js" defer></script>
     <script src="assets/js/portfolio.js" defer></script>
@@ -30,41 +37,61 @@
     </div>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="./" aria-label="Gustavo Stelzer, início"><span class="brand-monogram" aria-hidden="true">gs<span>.</span></span><span class="brand-name">Gustavo Stelzer<small>Desenvolvedor Full Stack</small></span></a>
+        <a class="brand" href="./" aria-label="Gustavo Stelzer, início">
+          <span class="brand-monogram" aria-hidden="true">gs<span>.</span>
+          </span>
+          <span class="brand-name">Gustavo Stelzer<small>Desenvolvedor Full Stack</small>
+          </span>
+        </a>
         <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
           <a href="#projetos">Projetos</a>
           <a href="#sobre">Sobre</a>
+          <a href="#jogos">Jogos</a>
           <a href="#alem-do-codigo">Além do código</a>
           <a href="#contato">Contato</a>
         </nav>
         <div class="header-controls">
           <details class="appearance" data-appearance="" hidden="">
-            <summary aria-label="Personalizar aparência"><span class="appearance-icon" aria-hidden="true">◐</span><span>Estilo</span></summary>
+            <summary aria-label="Personalizar aparência">
+              <span class="appearance-icon" aria-hidden="true">◐</span>
+              <span>Estilo</span>
+            </summary>
             <div class="appearance-panel" role="group" aria-label="Preferências de aparência">
               <p class="control-label">Cor de destaque</p>
               <div class="accent-options">
-                <button type="button" data-set-accent="red" aria-pressed="true"><i class="swatch swatch-red" aria-hidden="true"></i>Vermelho</button>
-                <button type="button" data-set-accent="violet" aria-pressed="false"><i class="swatch swatch-violet" aria-hidden="true"></i>Roxo</button>
-                <button type="button" data-set-accent="ice" aria-pressed="false"><i class="swatch swatch-ice" aria-hidden="true"></i>Gelo</button>
+                <button type="button" data-set-accent="red" aria-pressed="true">
+                  <i class="swatch swatch-red" aria-hidden="true"></i>Vermelho</button>
+                <button type="button" data-set-accent="violet" aria-pressed="false">
+                  <i class="swatch swatch-violet" aria-hidden="true"></i>Roxo</button>
+                <button type="button" data-set-accent="ice" aria-pressed="false">
+                  <i class="swatch swatch-ice" aria-hidden="true"></i>Gelo</button>
               </div>
-              <label class="motion-control"><input type="checkbox" data-reduce-motion> Reduzir movimentos</label>
+              <label class="motion-control">
+                <input type="checkbox" data-reduce-motion> Reduzir movimentos</label>
               <p class="appearance-note" data-appearance-note role="status">Suas preferências ficam neste navegador.</p>
             </div>
           </details>
-          <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false">Menu <span aria-hidden="true">+</span></button>
+          <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false">Menu <span aria-hidden="true">+</span>
+          </button>
         </div>
       </div>
     </header>
     <main id="conteudo">
       <section class="hero container" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow hero-eyebrow"><span class="small-dot" aria-hidden="true"></span> Desenvolvedor Full Stack / ES, Brasil</p>
-          <h1 id="hero-title">Gustavo<br><span class="surname">Stelzer<span class="title-dot">.</span></span></h1>
-          <p class="hero-statement">Código, curiosidade<br>e vontade de entender.</p>
-          <p class="hero-description">Trabalho com C#, .NET, Angular e Oracle. Desenvolvo sistemas corporativos e integrações, do que aparece na tela ao que acontece no banco de dados.</p>
+          <p class="eyebrow hero-eyebrow">
+            <span class="small-dot" aria-hidden="true"></span> Desenvolvedor Full Stack / ES, Brasil</p>
+          <h1 id="hero-title">Gustavo<br>
+            <span class="surname">Stelzer<span class="title-dot">.</span>
+            </span>
+          </h1>
+          <p class="hero-statement">Sistemas reais.<br>Da interface ao banco.</p>
+          <p class="hero-description">Desenvolvo sistemas corporativos com C#, .NET, Angular e Oracle. Minha experiência passa por operações de campo, integrações bancárias e modernização de aplicações legadas.</p>
           <div class="actions">
-            <a class="button button-primary" href="#projetos">Ver meus projetos <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="assets/curriculo-gustavo-stelzer.pdf" download>Meu currículo <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#projetos">Ver meus projetos <span aria-hidden="true">↘</span>
+            </a>
+            <a class="text-link" href="assets/curriculo-gustavo-stelzer.pdf" download>Meu currículo <span aria-hidden="true">↓</span>
+            </a>
           </div>
         </div>
         <figure class="portrait-composition">
@@ -87,25 +114,32 @@
             <span>Gustavo Monteiro Stelzer</span>
             <span>Colatina · Espírito Santo</span>
           </figcaption>
-          <a class="portrait-link" href="#alem-do-codigo">Também existe vida além do código <span aria-hidden="true">↗</span></a>
+          <a class="portrait-link" href="#alem-do-codigo">Também existe vida além do código <span aria-hidden="true">↗</span>
+          </a>
         </figure>
         <div class="hero-bottom">
           <p>C# <span>/</span> .NET <span>/</span> Angular <span>/</span> Oracle</p>
-          <a href="#projetos">Role para conhecer <span class="scroll-arrow" aria-hidden="true">↓</span></a>
+          <a href="#projetos">Role para conhecer <span class="scroll-arrow" aria-hidden="true">↓</span>
+          </a>
         </div>
       </section>
       <section id="projetos" class="section container" aria-labelledby="projects-title">
         <div class="section-heading" data-reveal="">
           <div>
-            <p class="eyebrow"><span class="section-index">01 /</span> Projetos selecionados</p>
-            <h2 id="projects-title">Uma seleção<br><span class="muted-heading">do meu trabalho.</span></h2>
+            <p class="eyebrow">
+              <span class="section-index">01 /</span> Projetos selecionados</p>
+            <h2 id="projects-title">Uma seleção<br>
+              <span class="muted-heading">do meu trabalho.</span>
+            </h2>
           </div>
           <p>Minha experiência envolve diferentes sistemas, integrações e modernização de aplicações. Separei alguns projetos para mostrar um pouco dessa atuação.</p>
         </div>
         <article class="featured-project" data-reveal="">
           <div class="featured-copy">
-            <p class="project-index">01 <span>Projeto autoral · Backend</span></p>
-            <h3>Oracle<br>Helper<span class="title-dot">.</span></h3>
+            <p class="project-index">01 <span>Projeto autoral · Backend</span>
+            </p>
+            <h3>Oracle<br>Helper<span class="title-dot">.</span>
+            </h3>
             <p>Repetir a mesma rotina de acesso ao Oracle em vários lugares não fazia muito sentido. Então criei uma classe C# para concentrar esse trabalho.</p>
             <p>Ela reúne execução de procedures e functions, tratamento de parâmetros e transformação de RefCursor em objetos.</p>
             <ul class="tags" aria-label="Tecnologias do Oracle Helper">
@@ -114,7 +148,8 @@
               <li>Oracle</li>
               <li>Reflection</li>
             </ul>
-            <a class="text-link project-link" href="projetos/oracle-helper.html">Conhecer o projeto por dentro <span aria-hidden="true">↗</span></a>
+            <a class="text-link project-link" href="projetos/oracle-helper.html">Conhecer o projeto por dentro <span aria-hidden="true">↗</span>
+            </a>
           </div>
           <div class="mapping-visual">
             <div class="mapping-heading">
@@ -122,7 +157,8 @@
               <span class="small-tag">.cs</span>
             </div>
             <div class="mapping-block">
-              <span class="block-label"><span class="small-dot" aria-hidden="true"></span> ORACLE · COLUNAS</span>
+              <span class="block-label">
+                <span class="small-dot" aria-hidden="true"></span> ORACLE · COLUNAS</span>
               <code>CD_SERVICO<br>DS_SERVICO<br>FL_ATIVO</code>
             </div>
             <div class="mapping-connector">
@@ -130,7 +166,8 @@
               <span>Normalização de nomes<br>e conversão de tipos</span>
             </div>
             <div class="mapping-block mapping-block-bottom">
-              <span class="block-label"><span class="small-dot" aria-hidden="true"></span> C# · PROPRIEDADES</span>
+              <span class="block-label">
+                <span class="small-dot" aria-hidden="true"></span> C# · PROPRIEDADES</span>
               <code>CdServico<br>DsServico<br>FlAtivo</code>
             </div>
             <p>Exemplo ilustrativo do mapeamento do helper.</p>
@@ -144,12 +181,15 @@
               <h3>Equipes e serviços em campo</h3>
               <p>Funcionalidades no FSA para acompanhar equipes no mapa, despachar serviços e organizar as atividades de campo.</p>
               <details>
-                <summary>Minha participação <span aria-hidden="true">+</span></summary>
+                <summary>Minha participação <span aria-hidden="true">+</span>
+                </summary>
                 <div class="detail-content">
                   <p>Atuação na interface Angular e nas integrações com o backend em C# e Oracle, conectando a visualização das equipes ao fluxo de serviços da operação.</p>
                   <p>O trabalho envolve filtros, apresentação das informações no mapa e acompanhamento das situações dos serviços.</p>
                 </div>
               </details>
+              <a class="case-link" href="projetos/equipes-em-campo.html">Ver contexto e minha contribuição <span aria-hidden="true">↗</span>
+              </a>
             </div>
             <ul class="project-tech" aria-label="Tecnologias">
               <li>Angular</li>
@@ -164,12 +204,15 @@
               <h3>Arrecadação e conciliação</h3>
               <p>Remodelagem do recebimento de contas de energia com o convênio Sicoob e conciliação automatizada de pagamentos via Pix e boleto.</p>
               <details>
-                <summary>Minha participação <span aria-hidden="true">+</span></summary>
+                <summary>Minha participação <span aria-hidden="true">+</span>
+                </summary>
                 <div class="detail-content">
                   <p>Atuação na integração entre os sistemas corporativos e os recebimentos bancários, com atenção ao processamento e à conciliação das informações.</p>
                   <p>Entender a regra de negócio e acompanhar o retorno de cada integração faz parte desse trabalho.</p>
                 </div>
               </details>
+              <a class="case-link" href="projetos/arrecadacao-e-conciliacao.html">Entender o fluxo da integração <span aria-hidden="true">↗</span>
+              </a>
             </div>
             <ul class="project-tech" aria-label="Áreas">
               <li>Integrações</li>
@@ -204,11 +247,15 @@
       <section id="sobre" class="about-section" aria-labelledby="about-title">
         <div class="container about-grid">
           <div data-reveal="">
-            <p class="eyebrow"><span class="section-index">02 /</span> Sobre mim</p>
-            <h2 id="about-title">Antes de escrever,<br>eu gosto de<br><span class="accent-text">entender.</span></h2>
+            <p class="eyebrow">
+              <span class="section-index">02 /</span> Sobre mim</p>
+            <h2 id="about-title">Antes de escrever,<br>eu gosto de<br>
+              <span class="accent-text">entender.</span>
+            </h2>
             <p>Passei por processos administrativos e suporte técnico antes de chegar ao desenvolvimento. Essa trajetória me ajuda a pensar em quem vai usar o sistema todos os dias.</p>
-            <p>Desde fevereiro de 2023, trabalho como Desenvolvedor Full Stack na Santa Maria Energia. Participo da evolução de sistemas, de integrações e da modernização de aplicações Oracle Forms para a web.</p>
-            <a class="text-link" href="assets/curriculo-gustavo-stelzer.pdf" download>Minha trajetória completa <span aria-hidden="true">↓</span></a>
+            <p>Minha trajetória em desenvolvimento Full Stack na Santa Maria Energia começou em fevereiro de 2023. Participo da evolução de sistemas, de integrações e da modernização de aplicações Oracle Forms para a web.</p>
+            <a class="text-link" href="assets/curriculo-gustavo-stelzer.pdf" download>Minha trajetória completa <span aria-hidden="true">↓</span>
+            </a>
           </div>
           <div class="trajectory" data-reveal="">
             <div class="timeline-item">
@@ -266,7 +313,8 @@
       <section id="alem-do-codigo" class="creative-section" aria-labelledby="creative-title">
         <div class="container">
           <div class="creative-heading" data-reveal="">
-            <p class="eyebrow"><span class="section-index">03 /</span> Além do código</p>
+            <p class="eyebrow">
+              <span class="section-index">03 /</span> Além do código</p>
             <p>Outro lado da mesma curiosidade.</p>
           </div>
           <article class="creative-feature" data-reveal="">
@@ -281,12 +329,15 @@
                 CRÍTICO
                 <span>.</span>
               </div>
-              <span class="critical-target" aria-hidden="true"><i></i></span>
+              <span class="critical-target" aria-hidden="true">
+                <i></i>
+              </span>
               <p class="poster-bottom">Uma pergunta leva à próxima.</p>
             </div>
             <div class="creative-copy">
               <p class="eyebrow">Projeto pessoal · Conteúdo &amp; pesquisa</p>
-              <h2 id="creative-title">Ponto Crítico<span class="title-dot">.</span></h2>
+              <h2 id="creative-title">Ponto Crítico<span class="title-dot">.</span>
+              </h2>
               <p>Minha curiosidade por tecnologia também aparece fora do trabalho. O Ponto Crítico é meu projeto de conteúdo sobre tecnologia, empresas e histórias que ajudam a entender o mundo.</p>
               <p>É um espaço para pesquisar, conectar ideias e explorar assuntos em formato de mini-documentário.</p>
               <ul class="tags" aria-label="Temas do projeto">
@@ -294,23 +345,76 @@
                 <li>Inteligência artificial</li>
                 <li>Histórias de empresas</li>
               </ul>
-              <a class="text-link" href="https://www.youtube.com/@PontoCriticoDocs" target="_blank" rel="noopener noreferrer">Conhecer o Ponto Crítico Docs <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://www.youtube.com/@PontoCriticoDocs" target="_blank" rel="noopener noreferrer">Conhecer o Ponto Crítico Docs <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </article>
+        </div>
+      </section>
+      <section id="jogos" class="arcade-section" aria-labelledby="arcade-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow arcade-label">
+                <span class="section-index">04 /</span> Intervalo</p>
+              <h2 id="arcade-title">Entre um código<br>
+                <span class="muted-heading">e outro.</span>
+              </h2>
+            </div>
+            <p>O café está passado. O robô, se achando. A energia… depende de você. Dois jogos para dar uma pausa.</p>
+          </div>
+          <div class="arcade-cards">
+            <a class="arcade-card" href="jogos/cafe-com-robo.html" data-reveal>
+              <div class="arcade-card-art" aria-hidden="true">
+                <img src="assets/img/coffee.svg" alt="" width="145" height="145" loading="lazy">
+                <img class="art-opponent" src="assets/img/robot.svg" alt="" width="95" height="95" loading="lazy">
+                <span class="sticker">EGO: 100%</span>
+              </div>
+              <div class="arcade-card-copy">
+                <p class="eyebrow">JOGO DA VELHA / VOCÊ × ROBÔ</p>
+                <h3>Café com robô.</h3>
+                <p>Um adversário convencido. Dois níveis de dificuldade. Nenhuma desculpa aceita pelo VAR.</p>
+                <div class="arcade-card-action">Desafiar o Bit <span aria-hidden="true">↗</span>
+                </div>
+              </div>
+            </a>
+            <a class="arcade-card arcade-card-power" href="jogos/plantao-do-apagao.html" data-reveal>
+              <div class="arcade-card-art" aria-hidden="true">
+                <img src="assets/img/bulb.svg" alt="" width="156" height="156" loading="lazy">
+                <span class="sticker">CAFÉ EM RISCO</span>
+              </div>
+              <div class="arcade-card-copy">
+                <p class="eyebrow">QUEBRA-CABEÇA / GIRE E CONECTE</p>
+                <h3>Plantão do apagão.</h3>
+                <p>Acenda as casas, salve a cafeteira e ajude Luzia a encerrar esse chamado.</p>
+                <div class="arcade-card-action">Assumir o plantão <span aria-hidden="true">↗</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <p class="arcade-footnote">É só abrir e jogar. Sem cadastro, sem instalar, sem reunião de alinhamento.</p>
         </div>
       </section>
       <section id="contato" class="contact-section" aria-labelledby="contact-title">
         <div class="container contact-inner">
           <div data-reveal="">
-            <p class="eyebrow"><span class="section-index">04 /</span> Contato</p>
-            <h2 id="contact-title">Vamos<br><span class="accent-text">conversar<span class="contact-dot">?</span></span></h2>
+            <p class="eyebrow">
+              <span class="section-index">05 /</span> Contato</p>
+            <h2 id="contact-title">Vamos<br>
+              <span class="accent-text">conversar<span class="contact-dot">?</span>
+              </span>
+            </h2>
             <p>Sobre um projeto, uma oportunidade ou uma boa ideia. Tenho interesse em desenvolvimento Full Stack e .NET, com disponibilidade para trabalho remoto.</p>
           </div>
           <div class="contact-links" data-reveal="">
-            <a class="contact-email" href="mailto:gustavomstelzer@gmail.com">gustavomstelzer@gmail.com <span aria-hidden="true">↗</span></a>
-            <a href="https://www.linkedin.com/in/gustavo-monteiro-stelzer-5a4586208/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/GustavoMStelzer" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-            <a href="assets/curriculo-gustavo-stelzer.pdf" download>Currículo em PDF <span aria-hidden="true">↓</span></a>
+            <a class="contact-email" href="mailto:gustavomstelzer@gmail.com">gustavomstelzer@gmail.com <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/gustavo-monteiro-stelzer-5a4586208/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://github.com/GustavoMStelzer" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <a href="assets/curriculo-gustavo-stelzer.pdf" download>Currículo em PDF <span aria-hidden="true">↓</span>
+            </a>
           </div>
         </div>
       </section>
@@ -319,7 +423,8 @@
       <div class="container footer-inner">
         <p>© <span data-year>2026</span> Gustavo Monteiro Stelzer</p>
         <span>Colatina, Espírito Santo.</span>
-        <a href="#conteudo">De volta ao início <span aria-hidden="true">↑</span></a>
+        <a href="#conteudo">De volta ao início <span aria-hidden="true">↑</span>
+        </a>
       </div>
     </footer>
   </body>
